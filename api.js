@@ -22,12 +22,13 @@ const postData = () => {
 const displayData = (posts) => {
   //1.get the container
   const postContainer = document.getElementById("post-container");
+  postContainer.innerHTML ="";
   // console.log(postContainer);
 
   posts.forEach((post) => {
     // console.log(post);
     // console.log(post.title);
-    
+
     //2.create html element
     const li = document.createElement("li");
     li.innerText = post.title;
