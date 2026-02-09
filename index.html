@@ -4,15 +4,38 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <style>
+      #post-container {
+        max-width: 1160px;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+        
+      }
+      .post-card {
+        border: 1px solid #ccc;
+        padding: 20px;
+        border-radius: 8px;
+        background-color: #f9f9f9;
+        margin-top: 20px;
+        box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.1);
+        height: 80%;
+      } 
+    </style>
   </head>
   <body>
     <button onclick="dataLoad()">click me</button>
     <button onclick="postData()">Post data</button>
+    <h3>All post here</h3>
 
-    <ol id="post-container">
+    <!-- <ol id="post-container">
 
-    </ol>
+    </ol> -->
 
-<script src="api.js"></script>
+    <div id="post-container">
+      
+    </div>
+    <script src="api.js"></script>
   </body>
 </html>
