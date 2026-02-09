@@ -20,7 +20,20 @@ const postData = () => {
 };
 
 const displayData = (posts) => {
+  //1.get the container
+  const postContainer = document.getElementById("post-container");
+  // console.log(postContainer);
+
   posts.forEach((post) => {
-    console.log(post);
+    // console.log(post);
+    // console.log(post.title);
+    
+    //2.create html element
+    const li = document.createElement("li");
+    li.innerText = post.title;
+    console.log(li)
+
+    //3.append the element to the container
+    postContainer.appendChild(li);
   });
 };
